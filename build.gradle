@@ -44,7 +44,7 @@ dependencies {
 
     compile(group: 'org.springframework.cloud', name: 'spring-cloud-cloudfoundry-service-broker', version: springCloudServiceBrokerVersion)
 	
-    compile(group: 'com.emc.ecs', name: 'object-client', version: '3.0.0'){
+    compile(group: 'com.emc.ecs', name: 'object-client', version: '3.0.1'){
     	exclude module: "slf4j-log4j12"
     }
 
@@ -65,7 +65,7 @@ eclipse {
 }
 
 springBoot {
-  executable = true
+//  executable = true
 }
 
 task wrapper(type: Wrapper) {
